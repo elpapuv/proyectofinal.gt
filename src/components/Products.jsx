@@ -3,9 +3,6 @@ import './Products.css'
 import { AddToCartIcon, RemoveFromCartIcon } from './Icons.jsx'
 import { useCart } from '../hooks/useCart.js'
 
-fetch('https://dummyjson.com/products')
-.then(res => res.json())
-.then(console.log);
 
 export function Products ({ products }) {
   const { addToCart, removeFromCart, cart } = useCart()
@@ -17,7 +14,7 @@ export function Products ({ products }) {
   return (
     <main className='products'>
       <ul>
-        {products.slice(0, 10).map(product => {
+        {products.slice(0, 50).map(product => {
           const isProductInCart = checkProductInCart(product)
 
           return (

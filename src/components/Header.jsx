@@ -3,7 +3,7 @@ import { Filters } from './Filters.jsx'
 export function Header () {
   return (
     <header>
-      <h1>TIENDA DE TECNOLOGIA <br />
+      <h1>SUPERMERCADO <br />
 DON GATO
       </h1>
       <Filters />
